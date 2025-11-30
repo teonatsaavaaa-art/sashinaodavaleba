@@ -4,18 +4,15 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main(String[] args) {
-        String courseName = "ტესტირების ავტომატიზაცია";
-        System.out.println(courseName.length());
+        int[] array = {10, 20, 30, 40, 50, 60, 70};
 
-        int length = courseName.length();
+        for (int i=0; i < array.length; i++) {
+            if (i == 4) {
+                continue;
 
-        if (length % 2 ==0) {
-
-            System.out.println("Even");
-        }
-else {
-
-    System.out.println("Odd");
+            }
+            System.out.println(array[i]);
     }
+
 }
 }
